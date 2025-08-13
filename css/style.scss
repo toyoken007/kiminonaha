@@ -3,20 +3,13 @@
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-* {
-  /* border: 1px solid; */
-}
-
-* {
   margin: 0;
+  padding: 0;
 }
 
 body {
   width: 100%;
   height: 100%;
-  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -52,10 +45,6 @@ li {
   padding: 0;
 }
 
-img {
-  width: 100%;
-}
-
 table {
   border-collapse: collapse;
 }
@@ -67,6 +56,7 @@ textarea {
 a {
   text-decoration: none;
   display: block;
+  color: inherit;
 }
 
 
@@ -85,16 +75,28 @@ header {
       font-size: clamp(20px, 3vw, 50px);
       letter-spacing: 0.2em;
     }
-    .subtitle {
+
+    &__subtitle {
       font-size: clamp(3px, 0.4vw, 20px);
       letter-spacing: 1em;
       text-align: center;
     }
   }
-  nav ul {
-    display: flex;
-    column-gap: 1.9em;
-    font-size: 1em;
-    align-items: center;
+
+  .nav {
+    &__title {
+      
+    }
+    &__list {
+      display: flex;
+      column-gap: 1.9em;
+      font-size: 1em;
+      align-items: center;
+    }
+    &__items {
+      > p a {
+        color: red;
+      }
+    }
   }
 }
