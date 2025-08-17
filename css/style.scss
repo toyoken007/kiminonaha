@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Noto+Serif+JP:wght@400;600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
 *,
 *::before,
 *::after {
@@ -5,6 +8,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+* {
+  font-family: "Noto Serif JP", serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 body {
@@ -63,21 +71,24 @@ a {
 // ヘッダー
 
 header {
-  background-color: #f8f9fa;
+  position: fixed;
+  z-index: 999;
+  background-color: #fbfafa;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 10px 7%;
+  padding: 15px 6% 8px 7.5%;
 
   .logo {
     h1 {
       font-size: clamp(20px, 3vw, 50px);
       letter-spacing: 0.2em;
+      line-height: 46px;
     }
 
     &__subtitle {
-      font-size: clamp(3px, 0.4vw, 20px);
+      font-size: clamp(3px, 0.5vw, 20px);
       letter-spacing: 1em;
       text-align: center;
     }
@@ -85,18 +96,23 @@ header {
 
   .nav {
     &__title {
-      
+      display: none;
     }
+
     &__list {
       display: flex;
-      column-gap: 1.9em;
+      column-gap: 1em;
       font-size: 1em;
       align-items: center;
-    }
-    &__items {
-      > p a {
-        color: red;
+      font-weight: bold;
+      a {
+        line-height: 22px;
+        letter-spacing: 1px;
       }
+    }
+
+    &__sns {
+      display: none;
     }
   }
 }
