@@ -65,6 +65,7 @@ a {
 }
 
 header {
+  display: none;
   position: fixed;
   z-index: 999;
   background-color: #fbfafa;
@@ -107,7 +108,57 @@ header .nav__sns {
   width: 100%;
   height: 90vh;
   background-image: url("../images/main_vsl01.jpg");
-  background-size: cover; /* 要素を埋めるように拡大・トリミング */
+  background-size: cover;
+  /* 要素を埋めるように拡大・トリミング */
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  position: relative;
+}
+.fv .fv__content {
+  padding-top: 13%;
+  width: 100%;
+}
+.fv .fv__content .midashi {
+  text-align: center;
+}
+.fv .fv__content .midashi .midashi__title {
+  font-size: 6em;
+  line-height: 40px;
+}
+.fv .fv__content .midashi__subtitle {
+  font-size: 2em;
+  margin-top: 20px;
+  letter-spacing: 10px;
+}
+.fv .fv__content .annai {
+  display: flex;
+  justify-content: space-between;
+}
+.fv .fv__content .annai .annai__sale .annai__content p {
+  font-size: 2em;
+}
+.fv .fv__content .annai .annai__sale .annai__content .sale-date p {
+  font-size: 5em;
+  line-height: 75px;
+}
+.fv .fv__content .annai .annai__sale .annai__content .sale__sns ul {
+  display: flex;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
+  padding-top: 30px;
+}
+.fv .fv__content .annai .annai__sale .annai__content .sale__sns ul li {
+  width: 30px;
+}
+.fv .fv__content .annai .annai_list ul {
+  display: flex;
+}
+.fv .fv__comment {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+}
+.fv .fv__comment P {
+  writing-mode: vertical-rl;
 }/*# sourceMappingURL=style.css.map */
