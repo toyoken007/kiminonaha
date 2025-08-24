@@ -83,6 +83,9 @@ header .logo h1 {
   line-height: 46px;
   font-weight: 400;
 }
+header .logo h1:hover {
+  opacity: 0.6;
+}
 header .logo__subtitle {
   font-size: clamp(3px, 0.5vw, 20px);
   letter-spacing: 1em;
@@ -169,6 +172,9 @@ header .nav__sns {
 .fv .annai .annai__sale .sale__sns ul li {
   width: 48px;
 }
+.fv .annai .annai__sale .sale__sns ul li:hover {
+  opacity: 0.6;
+}
 .fv .fv__list {
   position: absolute;
   top: 74%;
@@ -190,6 +196,9 @@ header .nav__sns {
   height: 150px;
   background-color: #fffb2c;
   border-radius: 50%;
+}
+.fv .fv__list ul li:hover {
+  opacity: 0.6;
 }
 .fv .fv__list ul li p {
   font-family: "Noto Sans JP", sans-serif;
