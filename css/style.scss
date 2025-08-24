@@ -89,6 +89,9 @@ header {
       letter-spacing: 0.6vw;
       line-height: 46px;
       font-weight: 400;
+      &:hover {
+        opacity: 0.6;
+      }
     }
 
     &__subtitle {
@@ -206,6 +209,9 @@ main {
 
           li {
             width: 48px;
+            &:hover {
+              opacity: 0.6;
+            }
           }
         }
       }
@@ -232,6 +238,9 @@ main {
         height: 150px;
         background-color: #fffb2c;
         border-radius: 50%;
+        &:hover {
+          opacity: 0.6;
+        }
 
         p {
           font-family: "Noto Sans JP", sans-serif;
