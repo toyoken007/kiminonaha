@@ -273,4 +273,11 @@ header .nav__sns {
   writing-mode: vertical-rl;
   white-space: nowrap;
   margin-top: 100px;
+}
+
+.topnews {
+  width: 100%;
+}
+.topnews .topnews__wrap {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
