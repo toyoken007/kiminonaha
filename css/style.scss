@@ -89,6 +89,7 @@ header {
       letter-spacing: 0.6vw;
       line-height: 1;
       font-weight: 400;
+
       &:hover {
         opacity: 0.6;
       }
@@ -118,6 +119,7 @@ header {
       a {
         line-height: 1.3;
         letter-spacing: 1px;
+
         &:hover {
           opacity: 0.6;
         }
@@ -152,14 +154,14 @@ main {
   background-repeat: no-repeat;
   position: relative;
 
-  .fv__midashi {
+  .fv__heading {
     position: absolute;
     top: 38%;
     left: 55%;
     transform: translate(-50%, -50%);
 
     h2 {
-      font-size: clamp(20px, 8vw, 100px);
+      font-size: clamp(20px, 7vw, 300px);
       letter-spacing: 0.2em;
       line-height: 1.2em;
       color: #fff;
@@ -170,19 +172,19 @@ main {
     p {
       font-size: clamp(10px, 1vw, 70px);
       letter-spacing: 10px;
-      padding-right: 130px;
+      margin-right: 22%;
       text-align: center;
       color: #fff;
       font-weight: bold;
     }
   }
 
-  .annai {
+  .release {
     position: absolute;
-    top: 48%;
     left: 30px;
+    bottom: -10px;
 
-    .annai__sale {
+    .release__guidance {
 
       p {
         font-size: clamp(20px, 2.5vw, 100px);
@@ -193,25 +195,26 @@ main {
         text-align: center;
       }
 
-      .sale_date {
+      .release__date {
         p {
           font-size: clamp(10px, 7vw, 150px);
           color: #fff;
           letter-spacing: -2px;
-          line-height: 80px;
+          line-height: 0.8;
         }
 
       }
 
-      .sale__sns {
+      .release__sns {
+        margin: 25px 0 0 10px;
 
         ul {
           display: flex;
-          margin-top: 25px;
-          column-gap: 7%;
+          column-gap: 5.5%;
 
           li {
-            width: 48px;
+            width: 12%;
+
             &:hover {
               opacity: 0.6;
             }
@@ -223,8 +226,8 @@ main {
 
   .fv__list {
     position: absolute;
-    top: 74%;
     right: 0;
+    bottom: -10px;
 
     ul {
       display: flex;
@@ -237,10 +240,11 @@ main {
         align-items: center;
         justify-content: center;
         text-align: center;
-        width: 150px;
-        height: 150px;
+        width: 11vw;
+        height: 11vw;
         background-color: #fffb2c;
         border-radius: 50%;
+
         &:hover {
           opacity: 0.6;
         }
@@ -258,22 +262,23 @@ main {
         color: #3150ff;
 
         .list1__p1 {
-          font-size: 18px;
+          font-size: clamp(10px, 1.4vw, 150px);
           line-height: 30px;
+          line-height: 1.2;
         }
 
         .list1__p2 {
-          font-size: 20px;
+          font-size: clamp(10px, 1.5vw, 150px);
           letter-spacing: 1px;
         }
 
         .list1__p3 {
-          font-size: 26px;
+          font-size: clamp(10px, 1.8vw, 150px);
           letter-spacing: 2px;
         }
 
         .list1__p4 {
-          font-size: 20px;
+          font-size: clamp(10px, 1.6vw, 150px);
           letter-spacing: 2px;
         }
       }
@@ -285,20 +290,27 @@ main {
 
         .list2__top {
           width: 100%;
+          height: 7vh;
           background-color: rgb(68, 47, 255);
           color: #fff;
           line-height: 1.2;
-          font-size: 13px;
           padding: 5px 0;
+          p {
+            font-size: clamp(10px, 1vw, 150px);;
+          }
         }
 
         .list2__bottom {
           margin-top: 7px;
           font-size: 20px;
           line-height: 1.3;
+          p {
+            font-size: clamp(10px, 1.5vw, 150px);
+            line-height: 1.2;
+          }
 
           .bottom_p3 {
-            font-size: 18px;
+            font-size: clamp(10px, 1.4vw, 150px);
           }
         }
       }
@@ -307,18 +319,20 @@ main {
         color: #3150ff;
 
         .list3__p1 {
-          font-size: 17px;
+          font-size: clamp(10px, 1.4vw, 150px);
           letter-spacing: 1px;
+          line-height: 1.8;
         }
 
         .list3__p2 {
-          font-size: 19px;
+          font-size: clamp(10px, 1.4vw, 150px);
           letter-spacing: 3px;
         }
 
         .list3__p3 {
-          font-size: 19px;
+          font-size: clamp(10px, 1.4vw, 150px);
           letter-spacing: 3px;
+          margin-bottom: 7px;
         }
       }
     }
@@ -330,13 +344,13 @@ main {
     right: 6px;
     height: 100%;
     overflow: hidden;
-    
+
     p {
-      font-size: 30px;
+      font-size: 31px;
       color: #ffffff;
       writing-mode: vertical-rl;
       white-space: nowrap;
-      margin-top: 100px;
+      margin-top: 16vh;
     }
   }
 }
@@ -346,10 +360,10 @@ main {
 
 .topnews {
   width: 100%;
+
   .topnews__wrap {
     display: flex;
-    .topnews__comment {
-      
-    }
+
+    .topnews__comment {}
   }
 }
