@@ -358,12 +358,24 @@ main {
 
 // ニュース
 
-.topnews {
-  width: 100%;
+.news {
+  width: 90%;
+  margin: 50px auto 0;
 
-  .topnews__wrap {
+  .news__wrap {
     display: flex;
-
-    .topnews__comment {}
+    justify-content: space-between;
+    .news__comment {
+      width: 500px;
+      ul {
+        li {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  .news__sns {
+    display: flex;
+    align-items: flex-end;
   }
 }

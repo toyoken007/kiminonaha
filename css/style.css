@@ -290,9 +290,21 @@ header .nav__sns {
   margin-top: 16vh;
 }
 
-.topnews {
-  width: 100%;
+.news {
+  width: 90%;
+  margin: 50px auto 0;
 }
-.topnews .topnews__wrap {
+.news .news__wrap {
   display: flex;
+  justify-content: space-between;
+}
+.news .news__wrap .news__comment {
+  width: 500px;
+}
+.news .news__wrap .news__comment ul li {
+  white-space: nowrap;
+}
+.news .news__sns {
+  display: flex;
+  align-items: flex-end;
 }/*# sourceMappingURL=style.css.map */
