@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Noto+Serif+JP:wght@400;600&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:wght@500&family=Zen+Maru+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+
 
 *,
 *::before,
@@ -295,8 +297,10 @@ main {
           color: #fff;
           line-height: 1.2;
           padding: 5px 0;
+
           p {
-            font-size: clamp(10px, 1vw, 150px);;
+            font-size: clamp(10px, 1vw, 150px);
+            ;
           }
         }
 
@@ -304,6 +308,7 @@ main {
           margin-top: 7px;
           font-size: 20px;
           line-height: 1.3;
+
           p {
             font-size: clamp(10px, 1.5vw, 150px);
             line-height: 1.2;
@@ -359,21 +364,71 @@ main {
 // ニュース
 
 .news {
-  width: 90%;
-  margin: 50px auto 0;
+  width: 85%;
+  margin: 17px auto 0;
 
   .news__wrap {
     display: flex;
     justify-content: space-between;
+
     .news__comment {
       width: 500px;
+
       ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
         li {
           white-space: nowrap;
+          font-family: "Crimson Text", serif;
+
+          a {
+            
+            .news__day {
+              // letter-spacing: 1px;
+              margin-left: 20px;
+              position: relative;
+              &::before {
+                position: absolute;
+                content: "";
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 10px;
+                height: 10px;
+                top: 5px;
+                left: -15px;
+                background-image: url('../images/imgi_157_feed_news_icon.png');
+              }
+            }
+
+            .news__comment1 {
+              margin-left: 57px;
+              position: relative;
+              &::before {
+                position: absolute;
+                content: "";
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 22px;
+                height: 12px;
+                top: 5px;
+                left: -22px;
+                background-image: url(../images/imgi_158_feed_news_icon_new.png);
+              }
+
+            }
+
+            .news__comment2 {
+              margin-left: 100px;
+            }
+          }
         }
       }
     }
   }
+
   .news__sns {
     display: flex;
     align-items: flex-end;
