@@ -370,24 +370,30 @@ main {
   .news__wrap {
     display: flex;
     justify-content: space-between;
+    color: #3150ff;
 
     .news__comment {
-      width: 500px;
+      width: 565px;
+      overflow: hidden;
 
       ul {
         display: flex;
         flex-direction: column;
         row-gap: 15px;
+
         li {
           white-space: nowrap;
           font-family: "Crimson Text", serif;
+          border-bottom: 1px solid;
+          border-color: #3150ff;
 
           a {
-            
+
             .news__day {
               // letter-spacing: 1px;
               margin-left: 20px;
               position: relative;
+
               &::before {
                 position: absolute;
                 content: "";
@@ -405,6 +411,7 @@ main {
             .news__comment1 {
               margin-left: 57px;
               position: relative;
+
               &::before {
                 position: absolute;
                 content: "";
@@ -421,10 +428,17 @@ main {
             }
 
             .news__comment2 {
-              margin-left: 100px;
+              margin-left: 35px;
             }
           }
         }
+      }
+
+      p {
+        text-align: end;
+        letter-spacing: -0.5px;
+        margin-top: 19px;
+        font-weight: bold;
       }
     }
   }
@@ -432,5 +446,53 @@ main {
   .news__sns {
     display: flex;
     align-items: flex-end;
+
+    p {
+      position: relative;
+      font-size: 15px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        background-image: url('../images/imgi_159_feed_tw_icon_l.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        left: -30px;
+        width: 24px;
+        height: 20px;
+        bottom: 2px;
+      }
+    }
+  }
+
+  .news__images {
+    margin-top: 34px;
+    .news__imgtop {
+      ul {
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
+        li {
+          width: calc(220 / 1350 * 100vw);
+          a:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+    .news__imgbottom {
+      margin-top: 10px;
+      ul {
+        display: flex;
+        column-gap: 10px;
+        li {
+          width: calc(220 / 1350 * 100vw);
+          a:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
   }
 }
